@@ -6,12 +6,12 @@ const  plusOne = document.querySelector('[data-action="increment"]');
 
 
 
-const pOne = () => {; 
+const incrementFunction = () => {; 
     value += 1;
      console.log(`your value: ${value}`);
    return validValue.textContent = value;
  }
-const mOne = () => {; 
+const decrementFunction = () => {; 
     value -= 1;
     console.log(`your value: ${value}`);
    return validValue.textContent = value;

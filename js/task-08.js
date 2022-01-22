@@ -9,6 +9,7 @@ const submitValid = (event) => {
     console.log(password.value);
     if (email.value === '' || password.value === '') {
         alert('всі поля обов"язкові для заповнення');
+        formValue.reset();
     } else { 
         const object = {
             [email.getAttribute('name')]: email.value,
