@@ -17,9 +17,9 @@ const images = [
 
 const wrapper = document.querySelector('.gallery');
 
-const items = images.map(({url, alt}) => {
+const items = images.map(({ url, alt }) => {
   return `<li class="test"><img src="${url}" alt="${alt}" width="100%" heigth="auto"></img></li>`
-});
+}).join('');
 console.log(items);
 wrapper.insertAdjacentHTML('afterbegin', items);
 

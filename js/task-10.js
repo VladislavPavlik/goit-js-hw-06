@@ -10,6 +10,7 @@ const howMuchToCreate = (event) => {
   const { currentTarget: { value } } = event;
   console.log(value);
   return returnedValue = value;
+
 };
 inputValue.addEventListener('blur', howMuchToCreate);
 // значення input
@@ -25,12 +26,14 @@ let startValueWidth = 30;
    wrapper.style.backgroundColor = getRandomHexColor();
     startValueHeigth += 10;
     startValueWidth += 10;
-   box.append(wrapper);
-   }
+    box.append(wrapper); 
+  }
+  inputValue.value = '';
 };
 // function to deleate all element :C
 const deleteAllEl = () => { 
   box.innerHTML = '';
+  inputValue.value = '';
 };
 createButton.addEventListener('click', newCreateElementFunc);
 destroyButton.addEventListener('click', deleteAllEl);
